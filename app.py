@@ -3,9 +3,11 @@
 from pyModbusTCP.server import ModbusServer, DataBank
 from time import sleep
 from random import uniform
+import logging
 #Create an instance of ModbusServer
 
-
+logger = logging.getLogger(__name__)
+logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 
 
 try:
