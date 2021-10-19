@@ -13,9 +13,11 @@ logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 
 try:
     logging.info("Iniciando")
-    server = ModbusServer(host="127.0.0.1", port=5020, no_block=True)
-    print("Start server...")
+    server = ModbusServer(host="localhost", port=5020)
+    logging.info("Start server...")
+    #print("Start server...")
     server.start()
+    logging.info("Server is online")
     print("Server is online")
     state=[0]
     while True:
