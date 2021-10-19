@@ -4,6 +4,7 @@ from pyModbusTCP.server import ModbusServer, DataBank
 from time import sleep
 from random import uniform
 import logging
+import sys
 #Create an instance of ModbusServer
 
 logger = logging.getLogger(__name__)
