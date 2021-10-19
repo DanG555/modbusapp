@@ -35,7 +35,7 @@ while True:
         # change default port of modbus from 502 to 5020 as it requires 
         # root permissions below 1024
         StartTcpServer(context, address=("localhost", 5020))
-    except Exception, e:
+    except Exception as e:
         logging.info("Error: {0}".format(str(e)))
     time.sleep(5)
 
