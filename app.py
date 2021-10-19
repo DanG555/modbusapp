@@ -9,6 +9,7 @@ from random import uniform
 
 
 try:
+    logging.info("Iniciando")
     server = ModbusServer(host="127.0.0.1", port=5020, no_block=True)
     print("Start server...")
     server.start()
@@ -21,7 +22,7 @@ try:
             print("Value of Registers 1 has changed to =" + str(state))
             sleep(0.5)
             
-except Exception, e:
+except Exception as e:
     logging.info("Error: {0}".format(str(e)))
     print("Shutdown server ....")
     server.stop()
