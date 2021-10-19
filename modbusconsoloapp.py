@@ -1,3 +1,4 @@
+#
 # Copyright 2010-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 #
 
@@ -38,4 +39,3 @@ while True:
     except Exception, e:
         logging.info("Error: {0}".format(str(e)))
     time.sleep(5)
-
