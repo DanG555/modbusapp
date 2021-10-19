@@ -6,7 +6,7 @@ from random import uniform
 #Create an instance of ModbusServer
 
 
-server = ModbusServer(host="127.0.0.1", port=502, no_block=True)
+server = ModbusServer(host="127.0.0.1", port=5020, no_block=True)
 
 try:
     print("Start server...")
